@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSurat">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ln1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rect_filter">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nameSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:padding="10dp"
+                        android:text="Alfatihah"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtArab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy"
+                        android:text="textArab" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:padding="10dp"
+                        android:text="Arti Surat :"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/artiSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy"
+                        android:text="Pembukaan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:padding="10dp"
+                        android:text="Jumlah Surat :"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/jumlahSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:text="7" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ln1"
+            android:layout_margin="10dp"
+            android:background="@drawable/rect_filter">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Audio"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:autoLink="web"
+                    android:id="@+id/audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy"
+                    android:text="Audio"
+                    android:textColor="@color/design_default_color_error" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Keterangan Surat"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy"
+                    android:text="@string/keterangan"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
